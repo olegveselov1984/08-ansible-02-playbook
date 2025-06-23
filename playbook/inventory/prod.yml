@@ -4,8 +4,10 @@ clickhouse:
     clickhouse-01:
 #      ansible_host: <IP_here>
       ansible_connection: docker
+      ansible_become_method: su
 vector:
   hosts:
     vector-01:
 #      ansible_host: <IP_here>
       ansible_connection: docker
+      ansible_become_method: su
