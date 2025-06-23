@@ -1,0 +1,12 @@
+services:
+  clickhouse-01:
+    image: pycontribs/centos:7
+    container_name: clickhouse-01
+    # restart: unless-stopped
+    entrypoint: "sleep infinity"   # что бы ВМ не останавливалась
+
+  vector-01:
+    image: pycontribs/centos:7
+    container_name: vector-01
+    # restart: unless-stopped
+    entrypoint: "sleep infinity"
